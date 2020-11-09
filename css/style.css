@@ -1,0 +1,74 @@
+/* imposto il reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+/* imposto caratteristiche del contenitore del layout */
+.container {
+  width: 1200px;
+  margin: 0 auto
+}
+
+/* definisco le caratteristiche dell'header */
+header {
+  background: orange;
+  height: 150px;
+  margin: 10px
+}
+
+/* definisco le caratteristiche del blocco contenuto */
+.content {
+  margin: 10px
+}
+
+/* definisco le caratteristiche del primo blocco */
+.first-block {
+  float: left;
+  background: pink;
+  width: 25%;
+  height: 300px;
+}
+
+/* definisco le caratteristiche del secondo blocco */
+.second-block {
+  background: purple;
+  width: calc(50% - 16px);
+  height: 450px;
+  margin: 0 8px
+}
+
+/* definisco le caratteristiche del terzo blocco */
+.third-block {
+  background: pink;
+  width: 25%;
+  height: 200px
+}
+
+/* definisco le caratteristiche del quarto blocco */
+.fourth-block {
+  background: pink;
+  width: 25%;
+  height: 200px;
+  margin-top: 10px
+}
+
+/* definisco le caratteristiche del clearfix */
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* definisco l'utility class per tutti e 4 i blocchi */
+.float-l {
+  float: left;
+}
+
+/* definisco le caratteristiche del footer */
+footer {
+  background: brown;
+  height: 70px;
+  margin-right: 10px;
+  margin-left: 8px
+}
